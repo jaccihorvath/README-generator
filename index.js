@@ -116,7 +116,7 @@ Find [${answers.username} on GitHub](https://github.com/${answers.username}) or 
 
 ## License
 Copyright (c) [${answers.username}](https://github.com/${answers.username}).
-Licensed under the ${answers.license}.
+Licensed under the ${answers.license} License.
 `
 
 
