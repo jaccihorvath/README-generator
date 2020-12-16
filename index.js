@@ -62,6 +62,12 @@ const promptUser = () => {
         },
         {
             type: "input",
+            name: "githubRepo",
+            message: "Please provide the name of your GitHub repository for this project:",
+            validate: validateInput
+        },
+        {
+            type: "input",
             name: "email",
             message: "Please provide your email address:",
             validate: validateInput
@@ -79,7 +85,7 @@ const promptUser = () => {
 
 // Function to generate README.md
 const generateReadme = (answers) =>
-`![License Badge](https://img.shields.io/badge/License-${answers.license}-green.svg](https://shields.io/)
+`![License Badge](https://img.shields.io/github/license/${answers.username}/${answers.githubRepo})
 # ${answers.title}
 
 ## Description
