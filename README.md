@@ -30,7 +30,7 @@ node index.js
 
 Once invoked, the user will be prompted with a series of questions. Input is required for all questions and may be submitted by pressing enter. The user's input will then be used to generate a README.md file.
 
-![terminal](./assets/terminal.png)
+![terminal](assets/terminal.PNG)
 
 [Watch a video walkthrough of the application.](https://drive.google.com/file/d/12-w9XbBvBm5GwLBZoyseOrt7_w8rnfdO/view?usp=sharing)
 
