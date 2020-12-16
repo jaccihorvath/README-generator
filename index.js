@@ -70,7 +70,7 @@ const promptUser = () => {
             type: "list",
             name: "license",
             message: "Which license would you like to include?",
-            choices: [ "MIT", "GNU GPLv3", "Apache 2.0", "ISC" ]
+            choices: [ "MIT", "GPL", "Apache", "ISC", "MPL" ]
         },
     ]);
 };
@@ -79,7 +79,7 @@ const promptUser = () => {
 
 // Function to generate README.md
 const generateReadme = (answers) =>
-`![License Badge](https://img.shields.io/badge/License-${answers.license}-green.svg)
+`![License Badge](https://img.shields.io/badge/License-${answers.license}-green.svg](https://shields.io/)
 # ${answers.title}
 
 ## Description
