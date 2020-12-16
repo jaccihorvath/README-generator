@@ -2,7 +2,7 @@
 # README Generator
 
 ## Description
- A Command-line application that generates a professional README.md file using node.js
+A Command-line application that generates a professional README.md file using node.js
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,7 +13,7 @@
 * [License](#license)
 
 ## Installation
-npm install
+run npm install
 
 ## Usage
 none
