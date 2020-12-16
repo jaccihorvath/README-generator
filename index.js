@@ -1,9 +1,11 @@
+// Requirements
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// const writeFileAsync = util.promisify(fs.writeFile);
 
+// Function to validate user input
 function validateInput(value) {
     if (value) {
         return true;
@@ -12,6 +14,8 @@ function validateInput(value) {
     }
 }
 
+
+//Inquirer prompts
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -52,14 +56,14 @@ const promptUser = () => {
         },
         {
             type: "input",
-            name: "github-username",
+            name: "username",
             message: "Please provide your GitHub username:",
             validate: validateInput
         },
         {
             type: "input",
-            name: "github-url",
-            message: "Please provide a link to your GitHub profile:",
+            name: "repo",
+            message: "Please provide your GitHub repository name for this project:",
             validate: validateInput
         },
         {
@@ -72,9 +76,53 @@ const promptUser = () => {
             type: "list",
             name: "license",
             message: "Which license would you like to include?",
-            choices: [ "MIT", "GPLv3", "Apache 2.0", "GNU General Public License v3.0", "BSD 3-Clause", "none"]
+            choices: [ "MIT License", "Apache 2.0 License", "GNU General Public License v3.0", 'BSD 2-Clause "New" or "Revised" License' ]
         },
     ]);
 };
 
-promptUser();
+
+
+// Function to generate README.md
+const generateReadme = (answers) =>
+`
+![License Badge](https://img.shields.io.github/license/${answers.username}/${answers.repo})
+# ${answers.title}
+
+## Description
+${answers.description}
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Contributing](#contributing)
+* [Questions](#questions)
+* [License](license)
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## Tests
+${answers.test}
+
+## Contributing
+${answers.contribution}
+
+## Questions
+Find [${answers.username} on GitHub](https://github.com/${answers.username}) or email [${answers.email}](mailto:${answers.email}) with additional questions.
+
+## License
+Copyright (c) [${answers.username}](https://github.com/${answers.username}).
+Licensed under the ${answers.license}.
+`
+
+
+// Initialize program
+promptUser()
+.then((answers) => writeFileAsync('README.md', generateReadme(answers)))
+.then(() => console.log("Success! README.md file created"))
+.catch((err) => console.error(err));
