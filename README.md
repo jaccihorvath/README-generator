@@ -1,8 +1,8 @@
-[![License Badge](https://img.shields.io/badge/License-Apache-green.svg](https://shields.io/)
+![License Badge](https://img.shields.io/github/license/jaccihorvath/README-generator)
 # README Generator
 
 ## Description
-A Command-line application that generates a professional README.md file using node.js
+A command-line application that generates a professional README.md file using node.js
 
 ## Table of Contents
 * [Installation](#installation)
@@ -22,11 +22,11 @@ none
 none
 
 ## Contributing
-node.js, inquirer, npm
+node.js, npm, inquirer
 
 ## Questions
-Find [jaccihorvath on GitHub](https://github.com/jaccihorvath) or email [jaccinhorvath@gmail.com](mailto:jaccinhorvath@gmail.com) with additional questions.
+Find [jaccihorvath on GitHub](https://github.com/jaccihorvath) or email [jacci@gmail.com](mailto:jacci@gmail.com) with additional questions.
 
 ## License
 Copyright (c) [jaccihorvath](https://github.com/jaccihorvath).
-Licensed under the Apache License.
+Licensed under the MIT License.
