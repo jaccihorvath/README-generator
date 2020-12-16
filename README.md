@@ -1,8 +1,8 @@
-![License Badge](https://img.shields.io.github/license/jaccihorvath/README-generator)
+![License Badge](https://img.shields.io/badge/License-MIT-green.svg)(https://shields.io/)
 # README Generator
 
 ## Description
-command-line program that generates a professional readme file using node.js
+A command-line application that generates a professional README.md file using node.js
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,7 +13,7 @@ command-line program that generates a professional readme file using node.js
 * [License](#license)
 
 ## Installation
-run npm install
+Run npm install
 
 ## Usage
 none
