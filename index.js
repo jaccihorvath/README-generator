@@ -62,12 +62,6 @@ const promptUser = () => {
         },
         {
             type: "input",
-            name: "repo",
-            message: "Please provide your GitHub repository name for this project:",
-            validate: validateInput
-        },
-        {
-            type: "input",
             name: "email",
             message: "Please provide your email address:",
             validate: validateInput
@@ -76,7 +70,7 @@ const promptUser = () => {
             type: "list",
             name: "license",
             message: "Which license would you like to include?",
-            choices: [ "MIT", "GNU GPLv3", "ISC" ]
+            choices: [ "MIT", "GNU GPLv3", "Apache 2.0", "ISC" ]
         },
     ]);
 };
