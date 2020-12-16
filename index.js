@@ -76,7 +76,7 @@ const promptUser = () => {
             type: "list",
             name: "license",
             message: "Which license would you like to include?",
-            choices: [ "MIT License", "Apache 2.0 License", "GNU General Public License v3.0", 'BSD 2-Clause "New" or "Revised" License' ]
+            choices: [ "MIT", "GNU GPLv3", "ISC" ]
         },
     ]);
 };
@@ -85,8 +85,7 @@ const promptUser = () => {
 
 // Function to generate README.md
 const generateReadme = (answers) =>
-`
-![License Badge](https://img.shields.io.github/license/${answers.username}/${answers.repo})
+`![License Badge](https://img.shields.io.github/license/${answers.username}/${answers.repo})
 # ${answers.title}
 
 ## Description
@@ -98,7 +97,7 @@ ${answers.description}
 * [Tests](#tests)
 * [Contributing](#contributing)
 * [Questions](#questions)
-* [License](license)
+* [License](#license)
 
 ## Installation
 ${answers.installation}
