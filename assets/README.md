@@ -1,4 +1,3 @@
-
 ![License Badge](https://img.shields.io.github/license/jaccihorvath/README-generator)
 # README Generator
 
@@ -11,7 +10,7 @@ command-line program that generates a professional readme file using node.js
 * [Tests](#tests)
 * [Contributing](#contributing)
 * [Questions](#questions)
-* [License](license)
+* [License](#license)
 
 ## Installation
 run npm install
@@ -26,8 +25,8 @@ none
 none
 
 ## Questions
-Find [jaccihorvath on GitHub](https://github.com/jaccihorvath) or email [jacci@gmail.com](mailto:jacci@gmail.com) with additional questions.
+Find [jaccihorvath on GitHub](https://github.com/jaccihorvath) or email [jaccinhorvath@gmail.com](mailto:jaccinhorvath@gmail.com) with additional questions.
 
 ## License
 Copyright (c) [jaccihorvath](https://github.com/jaccihorvath).
-Licensed under the MIT License.
+Licensed under the MIT.
