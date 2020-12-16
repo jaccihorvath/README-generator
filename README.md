@@ -1,4 +1,4 @@
-![License Badge](https://img.shields.io/badge/License-Apache-green.svg](https://shields.io/)
+[![License Badge](https://img.shields.io/badge/License-Apache-green.svg](https://shields.io/)
 # README Generator
 
 ## Description
