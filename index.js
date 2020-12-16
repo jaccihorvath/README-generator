@@ -85,7 +85,7 @@ const promptUser = () => {
 
 // Function to generate README.md
 const generateReadme = (answers) =>
-`![License Badge](https://img.shields.io.github/license/${answers.username}/${answers.repo})
+`![License Badge](https://img.shields.io/badge/License-${answers.license}-green.svg)
 # ${answers.title}
 
 ## Description
