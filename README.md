@@ -1,8 +1,8 @@
-![License Badge](https://img.shields.io/badge/License-GNU GPLv3-green.svg)
+![License Badge](https://img.shields.io/badge/License-Apache-green.svg](https://shields.io/)
 # README Generator
 
 ## Description
-A Command-line application that generates a professional README.md file using node.js
+ A Command-line application that generates a professional README.md file using node.js
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,7 +13,7 @@ A Command-line application that generates a professional README.md file using no
 * [License](#license)
 
 ## Installation
-Run npm install
+npm install
 
 ## Usage
 none
@@ -22,11 +22,11 @@ none
 none
 
 ## Contributing
-Node.js, npm, inquirer
+node.js, inquirer, npm
 
 ## Questions
 Find [jaccihorvath on GitHub](https://github.com/jaccihorvath) or email [jaccinhorvath@gmail.com](mailto:jaccinhorvath@gmail.com) with additional questions.
 
 ## License
 Copyright (c) [jaccihorvath](https://github.com/jaccihorvath).
-Licensed under the GNU GPLv3 License.
+Licensed under the Apache License.
